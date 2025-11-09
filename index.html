@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
-  <title>Simon</title>
+  <title>Simon Game</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
-
 <body>
   <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div lass="row">
 
-      <div type="button" id="green" class="btn green">
-
-      </div>
-
-      <div type="button" id="red" class="btn red">
-
-      </div>
-    </div>
-
-    <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
-      </div>
-
-    </div>
-
+  <!-- 🧠 New Instructions Box -->
+  <div class="info-box">
+    <h2>🎮 How to Play</h2>
+    <ul>
+      <li>Press <b>A</b> to start the game.</li>
+      <li>Watch the color pattern carefully.</li>
+      <li>Click the buttons in the same order.</li>
+      <li>Each round adds a new color to remember!</li>
+      <li>Wrong click = Game Over ❌</li>
+      <li>Press <b>A</b> again to restart.</li>
+    </ul>
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-<script src="index.js"></script>
-</body>
 
+  <div class="container">
+    <div class="row">
+      <div type="button" id="green" class="btn green"></div>
+      <div type="button" id="red" class="btn red"></div>
+    </div>
+    <div class="row">
+      <div type="button" id="yellow" class="btn yellow"></div>
+      <div type="button" id="blue" class="btn blue"></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
 </html>
